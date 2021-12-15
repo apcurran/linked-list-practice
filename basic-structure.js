@@ -17,3 +17,15 @@ b.next = c;
 c.next = d;
 
 // A -> B -> C -> D -> NULL
+
+function printLinkedList(head) {
+    let current = head;
+
+    while (current !== null) {
+        console.log(current.val);
+        // update current's value
+        current = current.next;
+    }
+}
+
+printLinkedList(a);
