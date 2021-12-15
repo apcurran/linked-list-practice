@@ -11,3 +11,9 @@ const a = new ListNode("A");
 const b = new ListNode("B");
 const c = new ListNode("C");
 const d = new ListNode("D");
+
+a.next = b;
+b.next = c;
+c.next = d;
+
+// A -> B -> C -> D -> NULL
