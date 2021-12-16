@@ -18,14 +18,23 @@ c.next = d;
 
 // A -> B -> C -> D -> NULL
 
-function printLinkedList(head) {
-    let current = head;
+// // Iterative solution
+// function printLinkedList(head) {
+//     let current = head;
 
-    while (current !== null) {
-        console.log(current.val);
-        // update current's value
-        current = current.next;
-    }
+//     while (current !== null) {
+//         console.log(current.val);
+//         // update current's value
+//         current = current.next;
+//     }
+// }
+
+// Recursive solution
+function printLinkedList(head) {
+    if (head === null) return;
+
+    console.log(head.val);
+    printLinkedList(head.next);
 }
 
 printLinkedList(a);
