@@ -37,4 +37,4 @@ function printLinkedList(head) {
     printLinkedList(head.next);
 }
 
-printLinkedList(a);
+printLinkedList(a); // A B C D
