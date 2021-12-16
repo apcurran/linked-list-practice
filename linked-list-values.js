@@ -16,16 +16,35 @@ a.next = b;
 b.next = c;
 c.next = d;
 
+// // Iterative solution
+// function linkedListValues(head) {
+//     let valuesArr = [];
+//     let current = head;
+
+//     while (current !== null) {
+//         valuesArr.push(current.val);
+//         current = current.next;
+//     }
+
+//     return valuesArr;
+// }
+
+// Recursive solution
 function linkedListValues(head) {
     let valuesArr = [];
-    let current = head;
 
-    while (current !== null) {
-        valuesArr.push(current.val);
-        current = current.next;
-    }
+    fillValues(head, valuesArr);
 
     return valuesArr;
+}
+
+// Recursive helper func
+function fillValues(head, valuesArr) {
+    if (head === null) return;
+
+    valuesArr.push(head.val);
+
+    fillValues(head.next, valuesArr);
 }
 
 console.log( linkedListValues(a) ); // [ 'A', 'B', 'C', 'D' ]
