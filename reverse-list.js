@@ -16,21 +16,33 @@ a.next = b;
 b.next = c;
 c.next = d;
 
-// Iterative solution
+// // Iterative solution
+// // Time: O(n)
+// // Space: O(1)
+// function reverseList(head) {
+//     let prev = null;
+//     let current = head;
+
+//     while (current !== null) {
+//         const next = current.next;
+//         current.next = prev;
+//         prev = current;
+//         current = next;
+//     }
+
+//     return prev;
+// }
+
+// Recursive solution
 // Time: O(n)
-// Space: O(1)
-function reverseList(head) {
-    let prev = null;
-    let current = head;
+// Space: O(n)
+function reverseList(head, prev = null) {
+    if (head === null) return prev;
 
-    while (current !== null) {
-        const next = current.next;
-        current.next = prev;
-        prev = current;
-        current = next;
-    }
+    const next = head.next;
+    head.next = prev;
 
-    return prev;
+    return reverseList(next, head);
 }
 
 console.log( reverseList(a) ); // "D" -> "C" -> "B" -> "A"
