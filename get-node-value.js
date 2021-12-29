@@ -16,9 +16,15 @@ a.next = b;
 b.next = c;
 c.next = d;
 
-// Iterative solution
-// Time: O(n)
-// Space: O(1)
+/**
+ * Iterative solution
+ * Time: O(n)
+ * Space: O(1)
+ * 
+ * @param {ListNode} head 
+ * @param {number} index 
+ * @returns {string|null}
+ */
 function getNodeValue(head, index) {
     let current = head;
     let count = 0;

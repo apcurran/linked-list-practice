@@ -30,6 +30,11 @@ c.next = d;
 // }
 
 // Recursive solution
+/**
+ * 
+ * @param {ListNode} head 
+ * @returns {array}
+ */
 function linkedListValues(head) {
     let valuesArr = [];
 
@@ -39,6 +44,12 @@ function linkedListValues(head) {
 }
 
 // Recursive helper func
+/**
+ * 
+ * @param {ListNode} head 
+ * @param {array} valuesArr 
+ * @returns {void}
+ */
 function fillValues(head, valuesArr) {
     if (head === null) return;
 

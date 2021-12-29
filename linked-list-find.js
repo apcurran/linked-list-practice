@@ -34,6 +34,12 @@ c.next = d;
 // Recursive solution
 // Time: O(n)
 // Space: O(n)
+/**
+ * 
+ * @param {ListNode} head 
+ * @param {string} target 
+ * @returns {boolean}
+ */
 function linkedListFind(head, target) {
     if (head === null) return false;
 

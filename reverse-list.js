@@ -36,6 +36,12 @@ c.next = d;
 // Recursive solution
 // Time: O(n)
 // Space: O(n)
+/**
+ * 
+ * @param {ListNode} head 
+ * @param {ListNode|null} prev 
+ * @returns {ListNode|null}
+ */
 function reverseList(head, prev = null) {
     if (head === null) return prev;
 

@@ -30,6 +30,11 @@ c.next = d;
 // }
 
 // Recursive solution
+/**
+ * 
+ * @param {ListNode} head 
+ * @returns {void}
+ */
 function printLinkedList(head) {
     if (head === null) return;
 

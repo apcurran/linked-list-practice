@@ -75,9 +75,9 @@ x.next = y;
  * Time: O(n)
  * Space: O(n)
  * 
- * @param {object} head1
- * @param {object} head2
- * @returns {object}
+ * @param {ListNode} head1
+ * @param {ListNode} head2
+ * @returns {ListNode|null}
  */
 function zipperLists(head1, head2) {
     if (head1 === null && head2 === null) return null;

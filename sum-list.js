@@ -36,6 +36,11 @@ d.next = e;
 // Recursive solution
 // Time: O(n)
 // Space: O(n)
+/**
+ * 
+ * @param {ListNode} head 
+ * @returns {number}
+ */
 function sumList(head) {
     // base case
     if (head === null) return 0;
