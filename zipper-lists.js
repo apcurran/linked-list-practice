@@ -78,7 +78,7 @@ x.next = y;
  * m = len of list2
  *
  * Time: O(min(n, m))
- * Space: O(n + m)
+ * Space: O(min(n, m))
  * 
  * @param {ListNode} head1
  * @param {ListNode} head2
