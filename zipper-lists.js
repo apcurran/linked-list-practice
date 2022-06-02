@@ -27,8 +27,10 @@ x.next = y;
 //  * The function should return the head of the zippered linked list.
 //  * 
 //  * Iterative solution
-//  * 
-//  * Time: O(n)
+//  * n = len of list1
+//  * m = len of list2
+//  *
+//  * Time: O(min(n, m))
 //  * Space: O(1)
 //  * 
 //  * @param {object} head1
@@ -72,8 +74,11 @@ x.next = y;
  * 
  * Recursive solution
  * 
- * Time: O(n)
- * Space: O(n)
+ * n = len of list1
+ * m = len of list2
+ *
+ * Time: O(min(n, m))
+ * Space: O(n + m)
  * 
  * @param {ListNode} head1
  * @param {ListNode} head2
