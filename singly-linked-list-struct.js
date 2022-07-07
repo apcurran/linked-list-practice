@@ -75,6 +75,7 @@ const list = new LinkedList();
 list.append("a");
 list.append("b");
 list.append("c");
+list.append(52);
 
 console.log(list);
 list.print();
@@ -82,3 +83,4 @@ list.print();
 console.log(list.contains("a")); // true
 console.log(list.contains("c")); // true
 console.log(list.contains("y")); // false
+console.log(list.contains(52)); // true
