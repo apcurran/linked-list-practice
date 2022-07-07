@@ -53,6 +53,22 @@ class LinkedList {
 
         console.log(strMsg);
     }
+
+    /**
+     * @param {any} target 
+     * @returns {boolean}
+     */
+    contains(target) {
+        let curr = this.head;
+
+        while (curr !== null) {
+            if (curr.val === target) return true;
+            // traverse
+            curr = curr.next;
+        }
+
+        return false;
+    }
 }
 
 const list = new LinkedList();
@@ -62,3 +78,7 @@ list.append("c");
 
 console.log(list);
 list.print();
+
+console.log(list.contains("a")); // true
+console.log(list.contains("c")); // true
+console.log(list.contains("y")); // false
