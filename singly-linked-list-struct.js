@@ -39,6 +39,20 @@ class LinkedList {
         // add to end of list
         curr.next = new ListNode(val);
     }
+
+    print() {
+        let curr = this.head;
+        let strMsg = "";
+
+        while (curr !== null) {
+            // append to message string
+            strMsg += `${curr.val} -> `;
+            // traverse to the next node in the list
+            curr = curr.next;
+        }
+
+        console.log(strMsg);
+    }
 }
 
 const list = new LinkedList();
@@ -47,3 +61,4 @@ list.append("b");
 list.append("c");
 
 console.log(list);
+list.print();
